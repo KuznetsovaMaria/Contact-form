@@ -8,12 +8,12 @@ import { RouterProvider } from 'react-router/dom';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/Contact-form/',
     element: <App />,
     errorElement: <ErrorPage />,
   },
   {
-    path: '/form-submitted',
+    path: '/Contact-form/form-submitted',
     element: <SuccessMsg />,
   },
 ]);

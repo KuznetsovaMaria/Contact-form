@@ -44,7 +44,7 @@ export default function ContactForm() {
     }),
     onSubmit: (values) => {
       console.log(values);
-      navigate('/form-submitted');
+      navigate('/Contact-form/form-submitted');
     },
   });
 
