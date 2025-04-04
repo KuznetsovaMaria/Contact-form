@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.successMsg {
+  padding: 2em;
+  border-radius: 0.8em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+p {
+  margin: 0;
+}

@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 
 export default function ContactForm() {
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       firstName: '',
@@ -11,6 +13,7 @@ export default function ContactForm() {
       message: '',
       consent: false,
     },
+
     validationSchema: yup.object({
       firstName: yup
         .string()
@@ -39,9 +42,9 @@ export default function ContactForm() {
           'Consent is required for us to contact you'
         ),
     }),
-
     onSubmit: (values) => {
       console.log(values);
+      navigate('/form-submitted');
     },
   });
 
