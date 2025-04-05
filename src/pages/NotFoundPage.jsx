@@ -6,7 +6,7 @@ export default function ErrorPage() {
       <h1>404 This page doesn't exist</h1>
       <div>
         <p>If you were looking for a contact form, try:</p>
-        <Link to="/">Contact form</Link>
+        <Link to="/Contact-form/">Contact form</Link>
       </div>
     </>
   );
