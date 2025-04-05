@@ -7,9 +7,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: rgb(216, 241, 225);
-  height: 100dvh;
 }
 
 div .form-container {
@@ -18,7 +23,6 @@ div .form-container {
   height: 100dvh;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 form {
@@ -29,6 +33,7 @@ form {
   font-size: 12px;
   border-radius: 0.8em;
   background-color: white;
+  color: rgb(66, 66, 66);
   width: 470px;
 }
 
@@ -37,23 +42,35 @@ fieldset {
   display: flex;
   margin: 0.2em 0em;
   padding: 0;
-  flex-basis: 100%;
+  flex-grow: 1;
 }
 
 .section {
+  display: flex;
   flex-direction: column;
-  gap: 0.2em;
 }
 
 .section-horizontal {
-  flex-direction: row;
-  gap: 1em;
   display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 #form-title {
   font-size: 26px;
-  margin-bottom: 1em;
+  margin-bottom: 0.6em;
+  color: black;
+}
+
+.full-name {
+  display: flex;
+}
+
+#queryType {
+  display: flex;
 }
 
 #message {
@@ -73,6 +90,7 @@ input {
   border-radius: var(--border-radius);
   border: 1px solid black;
   padding: 0.3em;
+  margin: 0;
 }
 
 fieldset#queryType div {
@@ -86,4 +104,22 @@ fieldset#queryType div {
 
 .errorMsg {
   color: rgb(205, 38, 38);
+}
+
+legend {
+  margin-bottom: 0.2em;
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    width: 300px;
+  }
+
+  .full-name {
+    gap: 0.2em;
+  }
+
+  #queryType {
+    gap: 0.4em;
+  }
 }

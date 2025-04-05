@@ -54,8 +54,8 @@ export default function ContactForm() {
         id="contact-form"
         onSubmit={formik.handleSubmit}
       >
-        <fieldset className="section-horizontal">
-          <legend id="form-title">Contact us</legend>
+        <legend id="form-title">Contact us</legend>
+        <fieldset className="section-horizontal full-name">
           <fieldset className="section">
             <legend
               htmlFor="input-first-name"
