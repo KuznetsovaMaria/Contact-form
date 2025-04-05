@@ -102,6 +102,10 @@ fieldset#queryType div {
   gap: 0.3em;
 }
 
+.error-container {
+  margin: 0.6em;
+}
+
 .errorMsg {
   color: rgb(205, 38, 38);
 }
